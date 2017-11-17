@@ -2,21 +2,25 @@ mod p_001;
 mod p_002;
 mod p_003;
 mod p_004;
+mod p_005;
 
-pub fn p_001() {
+fn p_001() {
     run(p_001::main);
 }
 
-pub fn p_002() {
+fn p_002() {
     run(p_002::main);
 }
 
-pub fn p_003() {
+fn p_003() {
     run(p_003::main);
 }
 
-pub fn p_004() {
+fn p_004() {
     run(p_004::main);
+}
+fn p_005() {
+    run(p_005::main);
 }
 
 pub fn solve(n: u32) {
@@ -30,8 +34,10 @@ pub fn solve(n: u32) {
         p_003();
     } else if n == 4 {
         p_004();
+    } else if n == 5 {
+        p_005();
     } else {
-        println!("That problem is not solved.")
+        println!("That problem is not yet solved.")
     }
 }
 
