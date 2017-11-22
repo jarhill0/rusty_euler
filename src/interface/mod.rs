@@ -4,6 +4,7 @@ mod p_003;
 mod p_004;
 mod p_005;
 mod p_006;
+mod p_007;
 
 fn p_001() {
     run(p_001::main);
@@ -29,6 +30,10 @@ fn p_006() {
     run(p_006::main);
 }
 
+fn p_007() {
+    run(p_007::main);
+}
+
 pub fn solve(n: u32) {
     // I know this is awful. I'm a complete novice in Rust and I'll make it better later.
     // Enums? HashMap? Something else I'm not aware of? I'll figure it out later.
@@ -44,6 +49,8 @@ pub fn solve(n: u32) {
         p_005();
     } else if n == 6 {
         p_006();
+    } else if n == 7 {
+        p_007();
     } else {
         println!("That problem is not yet solved.")
     }
