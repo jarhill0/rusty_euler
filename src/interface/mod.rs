@@ -3,6 +3,7 @@ mod p_002;
 mod p_003;
 mod p_004;
 mod p_005;
+mod p_006;
 
 fn p_001() {
     run(p_001::main);
@@ -19,8 +20,13 @@ fn p_003() {
 fn p_004() {
     run(p_004::main);
 }
+
 fn p_005() {
     run(p_005::main);
+}
+
+fn p_006() {
+    run(p_006::main);
 }
 
 pub fn solve(n: u32) {
@@ -36,6 +42,8 @@ pub fn solve(n: u32) {
         p_004();
     } else if n == 5 {
         p_005();
+    } else if n == 6 {
+        p_006();
     } else {
         println!("That problem is not yet solved.")
     }
